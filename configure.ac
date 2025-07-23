@@ -2,8 +2,6 @@ AC_INIT([ArtNavsegda], [1.0], [artnavsegda@gmail.com],[artnavsegda],[https://git
 AM_INIT_AUTOMAKE
 AC_MSG_NOTICE([Art Navsegda])
 AC_PROG_CC_STDC
-AX_PTHREAD
-AC_CHECK_LIB([pthread],[pthread_create])
 AC_CHECK_LIB([raylib],[InitWindow], [], [AC_MSG_ERROR(["Problem with raylib: InitWindow not found"])])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([Makefile src/Makefile])
